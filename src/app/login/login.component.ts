@@ -7,19 +7,20 @@ import { Component,OnInit } from '@angular/core';
 })
 export class LoginComponent  implements OnInit{
 
-  data="Get access to exclussive features by creating an Account"
+ 
   inputplaceholder="you@example.com"
   pswplaceholder="Atleast two characters"
   email=''
   psw=''
 
   userDetails:any={
-    manu2011:{uaername:"manu",password:"abc123",email:"manu@2011" },
-    anu2012:{uaername:"anu",password:"abc123",email:"anu@2012" },
-    meenu2013:{uaername:"meenu",password:"abc123",email:"meenu@2013" },
-    maku2014:{uaername:"maku",password:"abc123",email:"maku@2014" },
-    aku2015:{uaername:"aku",password:"abc123",email:"aku@2015" },
+    manu2011:{username:"manu",password:"abc123",email:"manu2011gmail.com" },
+    anu2012:{username:"anu",password:"abc123",email:"anu@2012" },
+    meenu2013:{username:"meenu",password:"abc123",email:"meenu@2013" },
+    maku2014:{username:"maku",password:"abc123",email:"maku@2014" },
+    akhi2015:{username:"akhi",password:"abc123",email:"akhi@2015" },
   }
+  // username: any;
 
   constructor()  { }
 
@@ -27,18 +28,29 @@ export class LoginComponent  implements OnInit{
     
   }
   login(){
-    alert('login clicked')
+    var email=this.email
+    var psw=this.psw
+    var userDetails=this.userDetails
+    if(email in userDetails){
+      if(psw==userDetails[email]["password"]){
+      alert("login success")
+      }
+      else{
+        alert("email is not valid or not registerd yet")
+      }
+    }
+    // alert('login clicked')
 
   }
   emailChange(event:any){
     this.email=event.target.value
-    console.log(this.email);
+    // console.log(this.email);
     
     
   }
   pswChange(event:any){
     this.psw=event.target.value
-    console.log(this.psw);
+    // console.log(this.psw);
 
 }
 }

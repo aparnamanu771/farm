@@ -1,7 +1,7 @@
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.postimg.cc/PJ0r2jgB/wooden-board-with-unfocused-nature-background.jpg");
-    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.postimg.cc/vmCm3x4H/Whats-App-Image-2023-03-22-at-8-02-56-AM.jpg");
+    /* height: 79vh; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,7 +16,4 @@
    position: absolute;
    z-index: 2;
    width: 100%;
-  }
-  .h4{
-    color: red;
   }
