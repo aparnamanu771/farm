@@ -7,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit{
   data="Get access to exclussive features by creating an Account"
+  
   constructor(){}
 
   ngOnInit(): void {
-    
-  }
+     }
+    onsubmit(){
+
+    }
+ 
 
 }

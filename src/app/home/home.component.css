@@ -1,7 +1,6 @@
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.postimg.cc/PJ0r2jgB/wooden-board-with-unfocused-nature-background.jpg");
-    height: 80vh;
+    background-image:url("https://i.postimg.cc/vBCbt6sf/bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,4 +18,12 @@
   }
   .h4{
     color: red;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+    /* margin-top: 100px; */
+  }
+  .vegs {
+    margin-top: 200px;
   }
