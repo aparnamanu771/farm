@@ -13,14 +13,13 @@ export class RegisterComponent implements OnInit{
 
   ngOnInit(): void {
      }
-    onsubmit(){
-
-    }
+   
     onSubmit(){
       console.log(this.formdata);
       
 
     }
+    
  
 
 }
